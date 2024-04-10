@@ -1,2 +1,5 @@
-# clickhouse
-This repo has code on how to run ClickHouse locally
+# How to deploy ClickHouse locally
+
+I have decided to Deploy ClickHouse locally using **Docker**.
+
+
