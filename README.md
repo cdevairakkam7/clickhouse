@@ -22,8 +22,7 @@ Step 2: Configuring a new user to login into the ClickHouse client (file name ne
 
  Step 3: Running the ClickHouse Server Container locally
 
-    docker run -d -p 18123:8123 -p19000:9000 --name local-clickhouse-server --ulimit nofile=262144:262144 -v "$(pwd)newuser.xml:/etc/clickhouse-server/users.d/newuser.xml"
-     clickhouse/clickhouse-server
+    docker run -d -p 18123:8123 -p 19000:9000 --name local-clickhouse-server --ulimit nofile=262144:262144 -v "$(pwd)/newuser.xml:/etc/clickhouse-server/users.d/newuser.xml" clickhouse/clickhouse-server
 
 Step 4: Running the the ClickHouse Client via Docker
 
