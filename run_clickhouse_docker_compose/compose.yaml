@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  clickhouse-server:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse-server
+    ports:
+      - "8123:8123"   
+    environment:
+      CLICKHOUSE_DB: clickhouse_local_db   
+      CLICKHOUSE_USER: youtube_watcher 
+      CLICKHOUSE_PASSWORD: "youtube_watcher"
+
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
