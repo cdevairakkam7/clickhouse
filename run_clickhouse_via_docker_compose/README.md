@@ -38,7 +38,7 @@ Given that our Docker Compose command creates a table called `persons` running t
 Select * from clickhouse_local_db.persons;
 ```
 
-will reterieve the following output
+will retrieve the following output
 
 | First Name | Last Name | Date of Birth |
 |------------|------------|---------------|
